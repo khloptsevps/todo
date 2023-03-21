@@ -1,0 +1,13 @@
+.list {
+  display: flex;
+  align-items: center;
+  @media (max-width: 574px) {
+    justify-content: center;
+  }
+
+  & > li {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+$primary: var(--bright-blue);
+$secondary: var(--text-color-items);
+
+.root {
+  cursor: pointer;
+  &:hover {
+    color: $primary;
+  }
+  &:active {
+    color: inherit;
+  }
+}
+
+.primary {
+  color: $primary;
+}
+
+.secondary {
+  color: $secondary;
+}
+
+.disabled {
+  cursor: default;
+}

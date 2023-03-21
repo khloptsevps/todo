@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+//Light Theme Colors
+$veryLightGray: hsl(0, 0%, 98%);
+$veryLightGrayishBlue: hsl(236, 33%, 92%);
+$light-grayish-blue: hsl(233, 11%, 84%);
+$dark-grayish-blue: hsl(236, 9%, 61%);
+$very-dark-grayish-blue: hsl(235, 19%, 35%);
+
+//Dark Theme Colors
+$very-dark-blue: hsl(235, 21%, 11%);
+$very-dark-desaturated-blue: hsl(235, 24%, 19%);
+$ligh-grayish-blue: hsl(234, 39%, 85%);
+$ligh-grayish-blue-hover: hsl(236, 33%, 92%);
+$dark-grayish-blue: hsl(234, 11%, 52%);
+$very-dark-grayish-blue: hsl(237, 14%, 26%);
+
+//colors
+// $bright-blue: hsl(220, 98%, 61%);
+//Check Background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%)
+
+// Light theme
+:root {
+  --bright-blue: hsl(220, 98%, 61%);
+  --icon-check: url('../public/assets/svg/icon-check.svg');
+}
+
+body[data-theme='light'] {
+  --bg-image: url('../public/assets/image/bg-desktop-light.jpg');
+  --bg-color: hsl(236, 33%, 92%);
+  --el-bg-color: hsl(0, 0%, 98%);
+  --text-color: hsl(235, 19%, 35%);
+  --border-color: hsl(236, 33%, 92%);
+  --loading-color: hsl(0deg 0.16% 89.95%);
+}
+
+body[data-theme='dark'] {
+  --bg-image: url('../public/assets/image/bg-desktop-dark.jpg');
+  --bg-color: hsl(235, 21%, 11%);
+  --el-bg-color: hsl(235, 24%, 19%);
+  --text-color: hsl(236, 33%, 92%);
+  --border-color: hsl(237, 14%, 26%);
+  --loading-color: hsl(235deg 13.89% 18.96%);
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+button {
+  color: inherit;
+  background: none;
+  border: none;
+}
+
+body {
+  margin: 0;
+  font-size: 18px;
+  // background: var(--bg-image) center/cover no-repeat;
+  --text-color-items: hsl(236, 9%, 61%);
+  background-color: var(--bg-color);
+}

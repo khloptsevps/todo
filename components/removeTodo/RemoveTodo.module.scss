@@ -1,0 +1,11 @@
+.root {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  &:active {
+    transform: translateY(3px);
+  }
+  &:disabled {
+    transform: translateY(0);
+    cursor: default;
+  }
+}

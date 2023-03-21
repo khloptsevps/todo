@@ -1,0 +1,29 @@
+.root {
+  padding: 0 20px;
+  max-width: 540px;
+  margin: -140px auto;
+}
+
+.addTodo {
+  margin-bottom: 35px;
+}
+
+.filter {
+  display: none;
+  padding: 20px;
+  background-color: var(--el-bg-color);
+  border-radius: 5px;
+  overflow: hidden;
+  & > div > ul > li > button {
+    font-size: 20px;
+  }
+  @media (max-width: 574px) {
+    display: block;
+  }
+}
+
+.todoList {
+  @media (max-width: 574px) {
+    margin-bottom: 30px;
+  }
+}
