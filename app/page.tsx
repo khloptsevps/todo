@@ -10,7 +10,7 @@ interface HomePageProps {
     filter: 'active' | 'completed' | undefined;
   };
 }
-
+console.log('test');
 const Home = ({ searchParams }: HomePageProps) => {
   const todos = getAllTodos();
   const filterParam = !searchParams.filter ? null : searchParams.filter;
